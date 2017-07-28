@@ -1,0 +1,157 @@
+name: 關於 BeeWare 專案
+---
+summary: BeeWare 專案的歷史與哲學
+---
+title: 關於 BeeWare
+---
+incomplete: true
+---
+body:
+
+.. _history:
+
+歷史
+=======
+
+BeeWare 專案源自一個單純的疑問：為什麼我們 Python 開發者使用的工具沒有和其他日常科技一同進步？
+
+Python 已經證明自己有很強的能耐——平易近人，但在專家手上仍有無比威力。在資料分析、科學運算、網頁開發等領域裡，Python 都正迅速成為主力語言。諸如 `Django Girls`_ 等等組織都已證明，可以在單日的訓練課程中將 Python 介紹給完全沒有程式經驗的人，且在一天結束後，參加者能夠建立一個由資料庫驅動的動態網站，並部署至公開的伺服器。
+
+.. _Django Girls: https://djangogirls.org/
+
+然而，撰寫 Python 的開發者體驗有時更接近 90 年代，而非 21 世紀。Python 的預設開發環境仍然是個 80×25 終端機視窗。來自 Windows 或蘋果環境的開發者已經習於使用極其詳盡、設計優良的圖形化介面；當他們轉換環境時，這道 30 年鴻溝讓人感到無比陌生。
+
+沒錯，市面上有許多 IDE（Integrated Development Environment，整合開發環境）能提供原生的程式碼撰寫工具。但這些工具需要你完全接受它們自己對專案的想法，而在解決問題的同時，產生更多問題。
+
+我們面對一個很有趣的分裂：在終端機視窗的 Unix 開發「舊方法」，以及一體化 IDE 的「新方法」。
+
+.. _the-unix-philosophy:
+
+Unix 哲學
+~~~~~~~~~~~~~~~~~~~
+
+為什麼非得如此呢？Unix 哲學的核心宗旨是「每個工具只做一件事情、做好一件事情」。這個哲學十分強大，讓各路工具能相互整合，串連成一個極度強大的集合體。
+
+很可惜的是，許多 Unix 工具把這個想法走歪成「所有工具都應該使用終端機介面」。Unix 哲學本身可根本沒提到終端機——這只是最後的發展結果。
+
+BeeWare 專案的發展前提，便是希望統合這兩個極端。我們可以擁有一個工具鍊，其中每個工具都各自做好自己的事情，但同時也善用豐富的圖形化介面呈現其功能。
+
+.. _the-goal:
+
+目標
+========
+
+BeeWare 專案的終極目標，是在行動與桌面開發中，扮演類似 Django 在網頁上的角色——提供一系列工具與函式庫，讓使用者能開發豐富的原生使用者介面，並將它部署到裝置上。這包含：
+
+* 讓 Python 在不同裝置上執行
+* 包裝 Python 專案，讓它能在這些裝置上執行
+* 使用裝置原生介面與功能的函式庫
+* 協助開發、除錯、分析、部署這些專案的工具
+
+這套工具必須足夠平易近人，讓純新手能在類似 Django Girls 的環境中迅速進入狀況，但也要強大到能夠協助下一個 Instagram、Pinterest、或者 Disqus。
+
+更重要的是，這個專案計畫以開源社群的方式達成這些目標。開放原始碼的開發流程已經證明自己，是開發強健、可靠軟體的最佳途徑，且由於這些軟體能被所有人使用，不論專家或業餘玩家，也就能在起跑點擁有相同的優異工具。
+
+.. _python-everywhere:
+
+處處皆 Python
+~~~~~~~~~~~~~~~~~
+
+現代的計算機專案不能忽略過去十年最重大的計算機發展。Python 因為跨平台而自豪，而在十年前這代表在 Windows、macOS、Linux 上皆可使用。時至今日，手持設備才是重點，然而 Python 在手持平台的選擇仍然匱乏，無法涉足手持設備的跨平台領域。
+
+BeeWare 完全擁抱手持與其他新穎平台（例如手錶與機上盒），將它們視為計算機生態系的一等公民——如果人們擁有這些設備，就該能在上面執行 Python 軟體。
+
+.. _native-everywhere:
+
+處處皆原生
+~~~~~~~~~~~~~~~~~~
+
+It's easy to use themes to achieve cross-platform. However, it's easy to spot apps that have been built using themes - they're the ones that don't behave quite like any other app. Widgets don't look *quite* right, or there's a menu bar on a window in an OS X app. Themes can get quite close - but there are always telltale signs.
+
+On top of that, native widgets are always faster than a themed generic widget. After all, you're using native system capability that has been tuned and optimized, not a drawing engine that's been layered on top of a generic widget.
+
+Themes also miss many of the accessibility benefits of native platforms. Modern OS authors spend a lot of time tuning affordances for people with impaired mobility, vision or cognition. If you use native widgets, you usually get these affordances for free. If you reimplement widgets with a theme, you also have to re-implement the affordances.
+
+BeeWare uses native widgets and native functionality, rather than using a theme-based approach to application development.
+
+.. _python-native:
+
+Python 原生
+~~~~~~~~~~~~~
+
+BeeWare is also an unapologetically "Python first" framework. We like Python. We like the way it looks, and the way it works. If Python isn't available as a first-class option on a particular platform, we'll do whatever is necessary to make Python available as a development language. And when we have the opportunity to embrace Python idiom for an API or a design, we're going to do just that. That means we're going to use generators, context managers, `yield from` asynchronous calls, and more, in order to provide the best Python-native API for cross-platform app development.
+
+We're also looking to the future - this means that we support Python 3 exclusively.
+
+.. _native-experience:
+
+原生體驗
+~~~~~~~~~~~~~~~~~
+
+The experience of using any tool starts with the installation process. Part of BeeWare's "處處皆原生" philosophy is adopting appropriate native mechanisms for installation. If you're using a user-space tool, it should be presented to you as an package that installed in the same way you would install any other tool - be that through an app store, an installer, or a simple executable package. End users shouldn't know that you've written the application in Python.
+
+But if you're using a developer tool or library, then it should integrate with your development environment. And since we're using Python, that means you should be able to install it into your virtual environment using `pip install` and nothing more. No C-extensions, no compilers, no setting system paths or environment variables - Just install it, import it, and start writing (or running) code.
+
+.. _more-than-just-code:
+
+不只是程式
+===================
+
+It's about 不只是程式, though. A successful software project requires documentation, design skills, feedback and bug reports. The BeeWare community acknowledges that *all* contributions are important - not just the ones that come as a pull request on GitHub.
+
+Even then, it's easy to think of a project in a vacuum, as the sum of all contributions. But that's never the case. An open source project is about community.
+
+.. _diversity-and-inclusion:
+
+海納百川
+~~~~~~~~~~~~~~~~~~~~~~~
+
+A diverse community is a strong community. This means accepting people of all levels of experience, from all backgrounds, of all races, creeds, orientations and expressions. The BeeWare project is committed to developing and maintaining a inclusive, diverse and welcoming community.
+
+To back this up, we have an open offer to mentor anyone who wants to get involved as a contributor, and a `Code of Conduct`_ that is rigorously enforced. Any reports of violations of that code of conduct - even by senior community members - will be treated with respect and actioned appropriately.
+
+.. _Code of Conduct: /community/behavior/code-of-conduct/
+
+.. _healthy-and-sustainable:
+
+健全而長遠
+~~~~~~~~~~~~~~~~~~~~~~~
+
+It's also important to make sure that the community is accessible and sustainable. It's unfortunately become an accepted part of Open Source culture that "true" Open Source projects have to be developed entirely by volunteers. This acts as a barrier to entry for many groups - the only people able to spend their free time volunteering are those that *have* free time.
+
+It also frequently leads to burnout and other mental health issues amongst contributors. The fact that depression, anxiety, and burnout are so common in software development communities shouldn't be considered a badge of honour, or a demonstration of how committed a development team can be. It's a problem that needs to be tackled head on, and addressed in the same way a software bug would be addressed - with immediate workarounds, and long term plans to remove the systemic cause of the problem.
+
+While we place incredible value on the contributions of volunteers, we also know that volunteer efforts alone aren't the way to develop a 健全而長遠 community. For that reason, financial sustainability is a key consideration in the operation of the BeeWare project. As a community, we don't ignore the role that money has to play in providing the resources that allows people to begin and continue to contribute. We will, as a community, provide accepted mechanisms for individuals to monetize their work in meaningful ways, and wherever possible, compensate people for their work - without compromising the ideals of Open Source development.
+
+BeeWare: Python 的 IDE 們
+===========================
+
+This is BeeWare. We're incredibly excited about what the future holds for Python. We hope you'll join us on this journey.
+
+---
+gutter:
+
+* `歷史`_
+   - `Unix 哲學`_
+* `目標`_
+   - `處處皆 Python`_
+   - `處處皆原生`_
+   - `Python 原生`_
+   - `原生體驗`_
+* `不只是程式`_
+   - `海納百川`_
+   - `健全而長遠`_
+
+.. _`歷史`: ./#history
+.. _`Unix 哲學`: ./#the-unix-philosophy
+.. _`目標`: ./#the-goal
+.. _`處處皆 Python`: ./#python-everywhere
+.. _`處處皆原生`: ./#native-everywhere
+.. _`Python 原生`: ./#python-native
+.. _`原生體驗`: ./#native-experience
+.. _`不只是程式`: ./#more-than-just-code
+.. _`海納百川`: ./#diversity-and-inclusion
+.. _`健全而長遠`: ./#healthy-and-sustainable
+
+---
+sort_key: 2

@@ -4,39 +4,38 @@ title: BeeWare 是什麼？
 ---
 body:
 
+Python 已經證明自己有很強的能耐——平易近人，但在專家手上仍有無比威力。BeeWare 專案的目標是汲取 Python 程式語言的威力，讓各種程度的使用者都能開發具有原生使用者介面的應用程式。
 
-Python has proven itself as a highly capable language - approachable for newcomers, but powerful in the hands of experts. The BeeWare Project aims to take the power of Python as a language, and use it to enable users of all skill levels to develop applications with native user interfaces.
+BeeWare 專案的終極目標，是在行動與桌面開發中，扮演類似 Django 在網頁上的角色——提供一系列工具與函式庫，讓使用者能開發豐富的原生使用者介面，並將它部署到裝置上。這包含：
 
-The end goal of the BeeWare project: To be able to do for mobile and desktop user-facing software the same thing that Django has done for web software - to put into the hands of users a set of tools and libraries that enables them to develop rich, native user interfaces, and deploy them to their devices. This includes:
+* 讓 Python 在不同裝置上執行
+* 包裝 Python 專案，讓它能在這些裝置上執行
+* 使用裝置原生介面與功能的函式庫
+* 協助開發、除錯、分析、部署這些專案的工具
 
-* Tools to enable Python to run on different devices,
-* Tools to package a Python project so it can run on those devices,
-* Libraries to access the native widgets and capabilities of devices,
-* Tools to help develop, debug, analyze and deploy these projects.
+這套工具必須足夠平易近人，讓純新手能在類似 Django Girls 的環境中迅速進入狀況，但也要強大到能夠協助下一個 Instagram、Pinterest、或者 Disqus。
 
-This aim is that this set of tools will be easy enough to use for complete newcomers to use in a Django Girls-like setting; but powerful enough that they could be used to drive the next Instagram, Pinterest or Disqus.
+但我們並不只注重軟體，也希望成為具有社會良知的專案。我們期望建立、維護一個海納百川的社群，並擁有一個被嚴格執行的社群守則。我們同時希冀一個健全而長遠的社群——理解參與者的心理健康問題、為剛加入的夥伴提供資源、並持續參與社群。
 
-We're not just about software, though. We also aim to be a project with a social conscience. We aim to develop and maintain a diverse and inclusive community, and we have a Code of Conduct that is rigorously enforced. We also aspire to develop a healthy and sustainable community - one that is aware of mental health issues of its participants, and provides the resources for people to start engaging, and continue to engage with the community.
-
-Where to from here?
+接下來該做什麼？
 ===================
 
-If you'd like to know more about the history of BeeWare, `start here <../about/>`__.
+若你希望了解 BeeWare 的歷史，請\ `由此開始 <../about/>`__\ 。
 
-If you'd like to take BeeWare for a test drive, `take a look at the the various ways BeeWare tools can be used <../using/>`__.
+若你想試試 BeeWare，可以\ `看看 BeeWare 工具的使用法 <../using/>`__\ 。
 
-If you'd like to keep up to date with what we're doing, follow `@PyBeeWare <https://twitter.com/PyBeeWare/>`__ on Twitter. If you'd like to receive updates, hints, tips and announcements about the BeeWare project, `sign up for the Beeware Enthusiasts mailing list  </community/keep-informed/>`__.
+若你想了解我們的最新動態，可以在 Twitter 上關注 `@PyBeeWare <https://twitter.com/PyBeeWare/>`__\ 。若想獲得 BeeWare 專案相關的新聞、小常識、使用技巧、公告等訊息，請\ `加入 BeeWare 愛好者通訊表 </community/keep-informed/>`__\ 。
 
 ---
 gutter:
 
-Next steps
+下一步
 ==========
 
-* The `History of the BeeWare project  <../about/>`__
-* `BeeWare test drive <../using/>`__
-* `@PyBeeWare on Twitter <https://twitter.com/PyBeeWare/>`__
-* The `Beeware Enthusiasts mailing list  </community/keep-informed/>`__
+* `BeeWare 專案歷史 <../about/>`__
+* `BeeWare 試用 <../using/>`__
+* `@PyBeeWare (Twitter) <https://twitter.com/PyBeeWare/>`__
+* `Beeware 愛好者通訊表 </community/keep-informed/>`__
 
 ---
 incomplete: no

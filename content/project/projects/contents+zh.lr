@@ -4,6 +4,8 @@ _template: projects.html
 ---
 title: 專案
 ---
+incomplete: yes
+---
 summary: BeeWare 專案包含什麼？
 ---
 sort_key: 4
